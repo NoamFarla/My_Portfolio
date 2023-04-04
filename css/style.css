@@ -192,6 +192,7 @@ nav ul li a:hover::after {
     font-weight: 300;
     border-radius: 10px;
     transition: background .5s, transform .5s;
+    height: 350px;
 }
 
 .services-list div i {
@@ -235,7 +236,6 @@ nav ul li a:hover::after {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    width: 350px;
     height: 350px;
 }
 
