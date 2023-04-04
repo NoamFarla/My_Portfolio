@@ -18,6 +18,7 @@ function opentab(tabname){
 // Header
 
 var sidemenu = document.getElementById("sidemenu");
+var headerLinks = document.querySelectorAll("#sidemenu li a");
 
 function openmenu(){
     sidemenu.style.right = "0";
@@ -26,6 +27,12 @@ function closemenu(){
     sidemenu.style.right = "-200px";
 }
 
+headerLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+      closemenu();
+    });
+  });
+  
 // Form
 
 const form = document.forms['portfolio contact form'];
