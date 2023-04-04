@@ -23,4 +23,4 @@ You can navigate to each section using the navigation bar at the top of the page
 
 ## License
 
-This website is licensed under the MIT License. See the [LICENSE.md] file for details.
+This website is licensed under the MIT License. See the LICENSE.md file for details.
