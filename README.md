@@ -8,7 +8,7 @@ This website was built using HTML, CSS, and JavaScript. It is hosted on Netlify.
 
 ## Getting Started
 
-To view the website, simply visit noamfarla.netlify.app.
+To view the website, simply visit [my website](https://noamfarla.netlify.app).
 
 ## Navigation
 
