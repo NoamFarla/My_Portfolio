@@ -35,18 +35,24 @@ headerLinks.forEach(function(link) {
   
 // Form
 
-const form = document.forms['portfolio contact form'];
+const form = document.querySelector("form");
 const msg = document.getElementById("msg");
 
-form.addEventlistener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-        msg.innerHTML = "Message sent successfully"
-        setTimeout(function(){
-            msg.innerHTML = ""
-        }, 5000)
-        form.reset()
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const data = new FormData(form);
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(data).toString(),
+  })
+    .then(() => {
+      msg.innerHTML = "Message sent successfully!";
+      form.reset();
     })
-    .catch(error => console.error('Error!', error.message))
-})
+    .catch((error) => {
+      msg.innerHTML = "An error occurred, please try again later.";
+      console.error(error);
+    });
+});

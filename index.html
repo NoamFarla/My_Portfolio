@@ -154,17 +154,14 @@
                     <a href="/images/my-cv.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form name="portfolio contact form" data-netlify="true" netlify-honeypot="hpfield" data-netlify-recaptcha="true" action="contact">
+                    <form name="portfolio contact form" data-netlify="true" netlify-honeypot="hpfield" action="contact">
                         <input class="hidden" name="hpfield">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
-                        <div class="recaptcha">
-                        <div data-netlify-recaptcha="true"></div>
-                    </div>
-                    </form>
-                    <span id="msg"></span>
+                      </form>
+                      <span id="msg"></span>                      
                 </div>
             </div>
         </div>

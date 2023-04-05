@@ -481,7 +481,3 @@ nav .fas {
 .hidden {
     display: none;
 }
-
-.recaptcha {
-    transform: translateY(-20px);
-}
