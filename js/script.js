@@ -57,24 +57,8 @@ form.addEventListener("submit", (event) => {
     });
 });
 
-// example 2
+// Alert for cv
 
-var controller = new ScrollMagic.Controller();
-
-// loop through all elements
-$('.fade-in').each(function() {
-  
-  var tween = new TimelineMax();
-  var fromLeftFrom  = TweenMax.from($(this) , 1, {x: -500 , opacity: 0, ease:Linear.easeNone});
-  var fromLeftTo    = TweenMax.to($(this)   , 1, {x: 0    , opacity: 1, ease:Linear.easeNone});
-  
-tween
-    .add(fromLeftFrom)
-    .add(fromLeftTo)
-
-  var scene = new ScrollMagic.Scene({triggerElement: this, offset: '50%'})
-  .setTween(tween) // trigger a TweenMax.to tween
-  .addIndicators()
-  .addTo(controller);
-  
-});
+function unavailable() {
+  alert("Not available right now! Try again later.");
+}
