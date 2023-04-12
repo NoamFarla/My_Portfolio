@@ -481,3 +481,30 @@ nav .fas {
 .hidden {
     display: none;
 }
+
+.cc-nb-okagree {
+    background: #ff004f !important;
+    color: white !important;
+}
+
+.cc-nb-reject {
+    background: #ff004f !important;
+    color: white !important;
+}
+
+.cc-cp-foot-save {
+    background: #ff004f !important;
+    color: white !important;
+}
+
+.cookies-preferences {
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 17px;
+    transition: .1s;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #ff004f;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}

@@ -56,3 +56,25 @@ form.addEventListener("submit", (event) => {
       console.error(error);
     });
 });
+
+// example 2
+
+var controller = new ScrollMagic.Controller();
+
+// loop through all elements
+$('.fade-in').each(function() {
+  
+  var tween = new TimelineMax();
+  var fromLeftFrom  = TweenMax.from($(this) , 1, {x: -500 , opacity: 0, ease:Linear.easeNone});
+  var fromLeftTo    = TweenMax.to($(this)   , 1, {x: 0    , opacity: 1, ease:Linear.easeNone});
+  
+tween
+    .add(fromLeftFrom)
+    .add(fromLeftTo)
+
+  var scene = new ScrollMagic.Scene({triggerElement: this, offset: '50%'})
+  .setTween(tween) // trigger a TweenMax.to tween
+  .addIndicators()
+  .addTo(controller);
+  
+});
